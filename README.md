@@ -2,24 +2,28 @@
 ### No trecho de código abaixo é descrito como popular um combobox, através de uma requisição ajax.
 
 
-#### JavaScript 
+#### JavaScript  
 
-    $selectCliente.on('change', function () {
-        $.ajax({
-            url: '/Atendimento/BuscarDadosBancariosCliente',
-            type: 'GET',
-            data: {
-                codCliente: $selectCliente.val()
-            },
-            success: function (data) {
-                    $codigoBanco.val(data.CodigoBanco);
-                    $agenciaBanco.val(data.AgenciaBanco);
-                    $contaBanco.val(data.ContaBanco);
-                    $descricaoBanco.val(data.DescricaoBanco);
-            }
-        });
-    });  
-    
+    (function () {
+        var $selectCliente = $('#IdCliente');
+                   
+        $selectCliente.on('change', function () {
+            $.ajax({
+                url: '/Atendimento/BuscarDadosBancariosCliente',
+                type: 'GET',
+                data: {
+                    codCliente: $selectCliente.val()
+                },
+                success: function (data) {
+                        $codigoBanco.val(data.CodigoBanco);
+                        $agenciaBanco.val(data.AgenciaBanco);
+                        $contaBanco.val(data.ContaBanco);
+                        $descricaoBanco.val(data.DescricaoBanco);
+                }
+            });
+        });  
+    })();  
+        
 #### Controller  
     
     #region [PROPERTIES]
