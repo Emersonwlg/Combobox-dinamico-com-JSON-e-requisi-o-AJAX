@@ -47,22 +47,22 @@
     
     #region [METHODS]
     
-    private CadastroSolicitacaoPagamentoAporteDividendosViewModel PreencherDadosBancarios(int codCliente)
-        {
-            var model = new CadastroSolicitacaoPagamentoAporteDividendosViewModel();
-            var resultado = _atendimentoService.BuscarDadosBancariosCliente(codCliente);
+    private CadastroPagamentoClienteViewModel PreencherDadosBancarios(int codCliente)
+    {
+        var model = new CadastroPagamentoClienteViewModel();
+        var resultado = _atendimentoService.BuscarDadosBancariosCliente(codCliente);
 
-            if (resultado != null)
+        if (resultado != null)
+        {
+            model = new CadastroPagamentoClienteViewModel()
             {
-                model = new CadastroSolicitacaoPagamentoAporteDividendosViewModel()
-                {
-                    CodigoBanco = resultado.NumBanco,
-                    AgenciaBanco = resultado.AgenciaBanco,
-                    ContaBanco = resultado.ContaBanco,                    
-                    DescricaoBanco = resultado.NomeBanco
-                };
-            }
-            return model;
+                CodigoBanco = resultado.NumBanco,
+                AgenciaBanco = resultado.AgenciaBanco,
+                ContaBanco = resultado.ContaBanco,                    
+                DescricaoBanco = resultado.NomeBanco
+            };
         }
+        return model;
+    }
         
     #endregion
