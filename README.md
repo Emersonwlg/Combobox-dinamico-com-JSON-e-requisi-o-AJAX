@@ -1,18 +1,6 @@
 # Combobox dinâmico com JSON e requisição AJAX
-No código descreve como popular um combobox dinâmico usando requisição ajax.  
+## No código descreve como popular um combobox dinâmico usando requisição ajax.  
 
-`(function () {
-    var $selectCliente = $('#IdCliente');
-
-    inicializarTela();
-
-    function inicializarTela() {
-        aplicarChosen();
-    }
-
-    function aplicarChosen() {
-        $selectCliente.chosen();
-    }
 
     $selectCliente.on('change', function () {
         $.ajax({
@@ -29,5 +17,4 @@ No código descreve como popular um combobox dinâmico usando requisição ajax.
             }
         });
     });
-})();`
 
