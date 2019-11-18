@@ -1,6 +1,6 @@
 # Combobox dinâmico com JSON e requisição AJAX
 
-## JavaScript 
+### JavaScript 
 
     $selectCliente.on('change', function () {
         $.ajax({
