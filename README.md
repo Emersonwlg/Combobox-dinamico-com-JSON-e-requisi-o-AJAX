@@ -24,7 +24,7 @@
     
     #region [PROPERTIES]
     
-    private readonly IUsuarioRegionalServico _usuarioRegionalServico;
+    private readonly IAtendimentoService _atendimentoService;
     
     #endregion
     
