@@ -16,10 +16,9 @@
                     $descricaoBanco.val(data.DescricaoBanco);
             }
         });
-    });
+    });  
     
     
-    # Controller
     
     public JsonResult BuscarDadosBancariosCliente(int codCliente)  
     {
