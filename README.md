@@ -17,4 +17,13 @@
             }
         });
     });
+    
+    
+    # Controller
+    
+    public JsonResult BuscarDadosBancariosCliente(int codCliente)  
+    {
+        var resultado = PreencherDadosBancarios(codCliente);
+        return Json(resultado, JsonRequestBehavior.AllowGet);
+    }
 
