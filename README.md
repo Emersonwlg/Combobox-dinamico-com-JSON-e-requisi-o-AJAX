@@ -25,54 +25,7 @@
             });
         });  
     })();
-    ````
+    ```
         
-#### Controller  
-    
-    #region [PROPERTIES]
-    
-    private readonly IAtendimentoService _atendimentoService;
-    
-    #endregion
-    
-    #region [CONSTRUCTOR]
-    
-     public AtendimentoController(IAtendimentoService atendimentoService)
-     {
-        _atendimentoService = atendimentoService;
-     }
-    
-    #endregion
-      
-    #region [ACTIONS]
-    
-    public JsonResult BuscarDadosBancariosCliente(int codCliente)  
-    {
-        var resultado = PreencherDadosBancarios(codCliente);
-        return Json(resultado, JsonRequestBehavior.AllowGet);
-    }
-    
-    #endregion
-    
-    #region [METHODS]
-    
-    private CadastroPagamentoClienteViewModel PreencherDadosBancarios(int codCliente)
-    {
-        var model = new CadastroPagamentoClienteViewModel();
-        var resultado = _atendimentoService.BuscarDadosBancariosCliente(codCliente);
 
-        if (resultado != null)
-        {
-            model = new CadastroPagamentoClienteViewModel()
-            {
-                CodigoBanco = resultado.NumBanco,
-                AgenciaBanco = resultado.AgenciaBanco,
-                ContaBanco = resultado.ContaBanco,                    
-                DescricaoBanco = resultado.NomeBanco
-            };
-        }
-        return model;
-    }
-        
-    #endregion
     
