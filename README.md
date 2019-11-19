@@ -26,7 +26,7 @@
         });  
     })();
     ```
-        
+ ```c#        
 #### Controller  
     
     #region [PROPERTIES]
@@ -75,3 +75,4 @@
     }
         
     #endregion
+    ```
