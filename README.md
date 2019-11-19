@@ -1,9 +1,7 @@
 # Combobox dinâmico com JSON e requisição AJAX
 *No trecho de código abaixo é descrito como popular um combobox, através de uma requisição ajax no qual é chamado o método da Controller (C#).*
 
-
 ### JavaScript  
-
 
   (function () {    
         var $selectCliente = $('#IdCliente');
@@ -24,7 +22,7 @@
             });
         });  
     })();     
-    ---
+    
 
     #### Controller  
     
