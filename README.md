@@ -4,7 +4,7 @@
 
 #### JavaScript  
 
-    (function () {
+    [ { (function () {
     
         var $selectCliente = $('#IdCliente');
                    
@@ -23,7 +23,7 @@
                 }
             });
         });  
-    })();  
+    })(); }]  
         
 #### Controller  
     
