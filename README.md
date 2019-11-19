@@ -4,6 +4,7 @@
 ### JavaScript  
 
  
+functio(
         $selectCliente.on('change', function () {
             $.ajax({
                 url: '/Atendimento/BuscarDadosBancariosCliente',
