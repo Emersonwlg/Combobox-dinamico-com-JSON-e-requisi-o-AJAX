@@ -4,8 +4,8 @@
 
 ### JavaScript  
 
-  (function () {
-    
+
+  (function () {    
         var $selectCliente = $('#IdCliente');
                    
         $selectCliente.on('change', function () {
