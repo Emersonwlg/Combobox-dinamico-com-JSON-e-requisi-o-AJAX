@@ -3,8 +3,7 @@
 ### JavaScript
 ```javascript
  (function () {    
-        var $selectCliente = $('#IdCliente');                 
-     
+        var $selectCliente = $('#IdCliente');
  })();
  
  $selectCliente.on('change', function () {
