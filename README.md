@@ -24,8 +24,8 @@
                 }
             });
         });  
-    })();
-javascript```
+    })(); 
+    ```
 
 #### Controller  
     
